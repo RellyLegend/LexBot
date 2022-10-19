@@ -6,3 +6,5 @@ config();
 const dev = process.argv.includes('--dev');
 
 new Client({ dev });
+
+require("./app/server");

@@ -13,7 +13,7 @@ export default class extends Event {
         /** Set the prefix for servers. */
         const servers = await Server.find({});
         for (const server of servers) {
-			client.prefixes.set(server.serverId, `${server.settings?.prefix}`);
+			client.prefixes.set(server.serverId, `${server.prefix}`);
 		};
         Logger.event(`Loaded ${client.prefixes.size} custom server prefixes.`)
 	}

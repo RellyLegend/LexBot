@@ -42,7 +42,7 @@ export default class extends Command {
             });
             const helpEmbed = new Embed()
             .setTitle(`📬 Help Center`)
-            .setDescription(`Use \`${serverData.settings?.prefix}help <command>\` for more information on a single command.
+            .setDescription(`Use \`${serverData.prefix}help <command>\` for more information on a single command.
 **${this.client.commands.size}** total commands.`)
             .setColor(`BLUE`)
             .setFooter(`Requested by ${author.user.name}`)
